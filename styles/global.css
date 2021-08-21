@@ -21,7 +21,8 @@ html{
     --grey-blue: #A1B2CD;
     --grey-medium: #D3D9E2;
     --grey-light: #E5EAF1;
-
+    --grey-read: #eaecf2;
+    
     /* Para facilitar o dimensionamento dos elementos */
     /* User agent : 1rem = 16px -> 62.5% = 10px */ 
     font-size: 62.5%; 
