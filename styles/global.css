@@ -28,16 +28,21 @@ html{
 
 }
 
-.content header{
+.content{
+    max-width: min(112rem, 90%);
+}
 
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
 }
 
 .content header img{
     width: 16.7rem;
-    margin: 3.5rem auto;
 }
 
 body{
+    display: flex;
     height: 100vh;
     background: var(--background);
 }
@@ -53,8 +58,8 @@ button, input, .button{
     border-radius: .8rem;
 }
 
-button > img
-.button > img{
+button img,
+.button img{
     margin-right: 1rem;
     width: 2rem;
 }
@@ -73,17 +78,16 @@ button, .button {
     transition: filter .2s;
 }
 
-button{
+button, .button.solid{
     color: var(--white);
     background: var(--blue);
-    
 }
 
 button:hover{
     filter: brightness(1.2)
 }
 
-.button{
+.button.outlined{
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
@@ -104,4 +108,16 @@ button:hover{
     clip-path: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-weight: 700;
+    font-size: clamp(20px,  5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+    line-height: 4.2rem;
+}
+
+input::placeholder{
+    color: var(--grey-blue);
 }
