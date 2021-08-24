@@ -1,4 +1,4 @@
-![](https://github.com/caiohscruz/RocketQ/tree/master/public/images/rocketq.gif)
+![](https://github.com/caiohscruz/RocketQ/blob/master/public/images/rocketq.gif?raw=true)
 
 ## :satellite: De onde?
 
