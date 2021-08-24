@@ -64,11 +64,14 @@
                 <h2 class="sr-only">Perguntas da comunidade</h2>
                 <div class="questions">
 
+                    <!-- Caso não tenha nenhuma pergunta -->
+
                     <% if (hasNoQuestions) { %>
                         <%- include(`parts/noquestions`) %>
                     <% } %>
 
-                    
+                    <!-- Inclui as perguntas não lidas -->
+
                     <% questions.forEach(question => { %>
                         <div class="question-wrapper">
                             <div class="question-content">
@@ -94,6 +97,8 @@
                         </div>
                         <% }) %> 
                         
+                        <!-- Inclui as perguntas lidas -->
+
                         <% questionsRead.forEach(questionRead => { %>
                             
                             <div class="question-wrapper read">
@@ -110,7 +115,7 @@
                                 <div class="actions">
                                     <img src="/images/check.svg">
                                     Pergunta lida
-                                </div>
+                        ''      </div>
                                 
                             </div>
                             <% }) %> 
